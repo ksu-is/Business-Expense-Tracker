@@ -8,3 +8,6 @@ Creation date: 07/10/2019
 Code help: 
 https://github.com/Samwisebuze/PythonAccountant
 https://github.com/Meowcenary/Budget-Tracker
+
+https://codereview.stackexchange.com/questions/173486/simple-budget-program
+
