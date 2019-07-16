@@ -1,4 +1,4 @@
-# Used original code from Ivaylo Spasov and modified into a working program
+# Used original code from Michael Walden and modified into a working program to track the total of business expenses each month and outputting how much is leftover.
 
 
 # enter the monthly budget provided
@@ -15,7 +15,7 @@ def main():
     while closeProgram == 'no': 
         print()
         print('Expense Tracker Selections: ')
-        print('1- Add your Monthly Expenses Total: ')
+        print('1- Add your Monthly Expenses Total (Rent, Food, Labor, Maintenance, Etc..): ')
         print('2- Check your remaining Monthly Budget: ')
         print('3- Exit Expense Tracker: ')
         print()
