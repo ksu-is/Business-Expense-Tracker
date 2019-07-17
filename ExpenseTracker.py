@@ -27,7 +27,7 @@ def main():
 
         elif choice == 2:
             print()
-            print('Your current monthly budget is {40000}'.format(totalBudget))
+            print('Your current monthly budget is {0}'.format(totalBudget))
         
         elif choice == 3:
             print()
