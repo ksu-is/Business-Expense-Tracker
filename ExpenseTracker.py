@@ -1,5 +1,4 @@
-# Used original code from Michael Walden and modified into a working program to track the total of business expenses each month and outputting how much is leftover.
-
+# Borrowed some Code from Michael Walden
 
 # enter the monthly budget provided
 currentBudget = 40000
