@@ -1,9 +1,7 @@
 # Borrowed some Code from Michael Walden
 
 # enter the monthly budget provided
-currentBudget = 40000
-
-
+currentBudget = 20000
 
 def main():
     print('Welcome to Expense Tracker 1.0! ')
@@ -16,7 +14,8 @@ def main():
         print('Expense Tracker Selections: ')
         print('1- Add your Monthly Expenses Total (Rent, Food, Labor, Maintenance, Etc..): ')
         print('2- Check your remaining Monthly Budget: ')
-        print('3- Exit Expense Tracker: ')
+        print('3- Would you like to remove an expense?: ')
+        print('4- Exit Expense Tracker: ')
         print()
 
         choice = int(input('Proceed by entering a selection:'))
@@ -28,7 +27,11 @@ def main():
             print()
             print('Your current monthly budget is {0}'.format(totalBudget))
         
-        elif choice == 3:
+        elif choice == 3: 
+            print()
+            totalbudget = removeExpense(totalBudget)
+
+        elif choice == 4:
             print()
             closeProgram = 'yes'
             print('Expense tracker will now close. Have a nice day!')
