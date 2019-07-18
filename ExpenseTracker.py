@@ -47,5 +47,15 @@ def addExpense(totalBudget):
     else:
         print('You have exceeded your monthly budget!')
         return totalBudget
+   
+
+def removeExpense(totalBudget):
+    remove = float(input('Enter the amount you would like to remove: $'))
+    totalRemove = remove
+    if totalBudget + totalRemove >= 0:
+        totalBudget = totalBudget + totalRemove
+        print('Your expense has been removed, and your remaining total is now: ${0}'.format(totalBudget))
+        return totalBudget
+    
 
 main()
