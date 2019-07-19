@@ -13,8 +13,8 @@ def main():
         print()
         print('Expense Tracker Selections: ')
         print('1- Add your Monthly Expenses Total (Rent, Food, Labor, Maintenance, Etc..): ')
-        print('2- Check your remaining Monthly Budget: ')
-        print('3- Would you like to remove an expense?: ')
+        print('2- Would you like to remove an expense?: ')
+        print('3- Check your remaining Monthly Budget: ')
         print('4- Exit Expense Tracker: ')
         print()
 
@@ -23,13 +23,13 @@ def main():
             print()
             totalBudget = addExpense(totalBudget)
 
-        elif choice == 2:
+        elif choice == 2: 
             print()
-            print('Your current monthly budget is {0}'.format(totalBudget))
-        
-        elif choice == 3: 
+            totalBudget = removeExpense(totalBudget)
+
+        elif choice == 3:
             print()
-            totalbudget = removeExpense(totalBudget)
+            print('Your current remaining monthly budget is {0}'.format(totalBudget))
 
         elif choice == 4:
             print()
@@ -44,11 +44,11 @@ def addExpense(totalBudget):
     totalExpense = expense
     if totalBudget - totalExpense >= 0:
         totalBudget = totalBudget - totalExpense
-        print('Your business expenses have been recorded, your remaining total for the month is: ${0}'.format(totalBudget))
+        print('Your business expenses have been recorded, your remaining total for the month is: ${}'.format(totalBudget))
         return totalBudget
 
     else:
-        print('You have exceeded your monthly budget!')
+        print('This expense cannot be added to your total!')
         return totalBudget
    
 
@@ -57,7 +57,7 @@ def removeExpense(totalBudget):
     totalRemove = remove
     if totalBudget + totalRemove >= 0:
         totalBudget = totalBudget + totalRemove
-        print('Your expense has been removed, and your remaining total is now: ${0}'.format(totalBudget))
+        print('Your expense has been removed, and your remaining total is now: ${}'.format(totalBudget))
         return totalBudget
     
 
