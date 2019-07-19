@@ -8,4 +8,5 @@
 8. Build project code
 9. Review final code for improvements
 10. Create PowerPoint presentation
-11. Submit all required deliverables
+11.Edit and review presentation
+12. Submit all required deliverables
